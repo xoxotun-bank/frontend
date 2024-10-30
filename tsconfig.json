@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "src/*": ["*"],
+      "pages/*": ["pages/*"],
+      "shared/*": ["shared/*"]
+    },
+    "target": "es2020",
+    "lib": ["dom", "dom.iterable", "esnext", "ES2021.String"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react",
+    "outDir": "./dist"
+  },
+  "include": ["src", "./**/*.ts", "./**/*.tsx"],
+  "exclude": ["node_modules", "./dist/**/*"]
+}
