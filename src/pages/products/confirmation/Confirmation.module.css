@@ -1,0 +1,39 @@
+.wrapperClient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  border-radius: 10px;
+  width: 313px;
+  height: 576px;
+  gap: 30px;
+}
+
+.wrapperDeposit {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 10px;
+  width: 587px;
+  height: 576px;
+  gap: 16px;
+}
+
+.gridItem {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.gridItem p {
+  max-width: 180px;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

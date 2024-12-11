@@ -1,0 +1,12 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.returnButton {
+  position: absolute;
+  left: 0;
+}

@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+.card:hover .hoverButton {
+  visibility: visible;
+}
+.hoverButton {
+  visibility: hidden;
+}
