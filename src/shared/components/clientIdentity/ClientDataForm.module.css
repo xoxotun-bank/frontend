@@ -1,0 +1,18 @@
+.clientData {
+  display: flex;
+  gap: 60px;
+}
+
+.keys {
+  text-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.keys,
+.values {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}

@@ -1,4 +1,3 @@
-/* eslint-disable i18n/no-russian-character */
 import React from 'react';
 
 import capitalizationPeriod from 'src/assets/capitalizationPeriod.png';

@@ -4,7 +4,7 @@ import ErrorOutlinIcon from '@mui/icons-material/ErrorOutline';
 import { Button, DialogActions, DialogTitle, Stack, Typography } from '@mui/material';
 import { ConfirmedDeposit } from 'src/types/requests/ConfirmedDeposit';
 
-import TitledContainer from 'shared/components/TitledContainer';
+import TitledContainer from 'src/shared/components/TitledContainer';
 import { TutorModeComponent } from 'src/shared/components/tutorial/TutorModeComponent';
 
 import { depositCardConst, tutorialConst } from 'shared/constants';
