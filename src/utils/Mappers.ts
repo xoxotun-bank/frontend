@@ -1,6 +1,7 @@
 import { ChangeEvent } from 'react';
 
 import { UserData, UserRole } from 'src/types';
+import { AnalyticsRequest } from 'src/types/Analytics';
 import { FinProductsRequest } from 'src/types/requests/FinProductsRequest';
 
 import { analyticsPageConst, CalculatorConstants, UNDEFINED } from 'src/shared/constants/localeConstants';
@@ -77,6 +78,7 @@ export const createGetFinProductsQuery = (queryData: FinProductsRequest, allPeri
 
   const formatUndefinedValues = (values: Record<string, boolean | string>) => {
     const res: Record<string, boolean | string | undefined> = {};
+    // eslint-disable-next-line array-callback-return
     Object.keys(values).map((key) => {
       values[key] !== UNDEFINED && values[key] !== undefined && (res[key] = values[key]);
     });
@@ -224,6 +226,19 @@ export const formatAnalyticsPeriod = (period: string) => {
   if (period.length === 10) return getShortDateFromPeriod(period);
   const [start, end] = period.split(' - ');
   return `${getShortDateFromPeriod(start)} - ${getShortDateFromPeriod(end)}`;
+};
+
+export const createAnalyticsQuery = (params: AnalyticsRequest): string => {
+  const queryParams: Record<string, string> = {};
+
+  if (params.city) queryParams.city = params.city;
+  if (params.currency) queryParams.currency = params.currency;
+  if (params.period && params.period !== analyticsPageConst.PERIOD.CUSTOM) queryParams.period = params.period;
+  if (params.startDate) queryParams.startDate = params.startDate || '';
+  if (params.endDate) queryParams.endDate = params.endDate || '';
+
+  const queryString = new URLSearchParams(queryParams).toString();
+  return queryString ? `${queryString}` : '';
 };
 
 export const getDayLabel = (count: number): string => {

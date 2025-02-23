@@ -1,0 +1,36 @@
+.content {
+  display: flex;
+  gap: 24px;
+  height: 1000px;
+  margin-top: 24px;
+}
+
+.contentRight,
+.contentLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+}
+
+.contentLeft {
+  flex: 1;
+}
+
+.lineChart,
+.barChart,
+.pieChart {
+  flex: 1;
+}
+
+.contentRight {
+  width: 550px;
+}
+
+.topDeposits {
+  height: 670px;
+}
+
+.pieChart {
+  height: 300px;
+}
