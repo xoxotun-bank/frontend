@@ -1,0 +1,24 @@
+.wrapper {
+  padding: 24px;
+}
+
+.title {
+  /* TODO: Перенести в разметку, брать из темы */
+  padding-bottom: 8px;
+}
+
+.value {
+  /* TODO: Перенести в разметку, брать из темы */
+  padding-bottom: 8px;
+}
+
+.comparisonStr {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.comparisonStr p {
+  margin: 0;
+  padding: 0;
+}
